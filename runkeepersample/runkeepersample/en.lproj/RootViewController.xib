@@ -89,12 +89,12 @@
 						<reference key="IBUIHighlightedTitleColor" ref="819063410"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
+							<bytes key="NSRGB">MC4xOTYwNzg0MzE0IDAuMzA5ODAzOTIxNiAwLjUyMTU2ODYyNzUAA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="714473787"/>
 						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">connect-blue-black-300x57.png</string>
+							<string key="NSResourceName">connect-blue-black.png</string>
 						</object>
 					</object>
 					<object class="IBUILabel" id="684129196">
@@ -416,6 +416,7 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>connectButton</string>
 							<string>disconnectButton</string>
 							<string>pauseButton</string>
 							<string>progressLabel</string>
@@ -423,6 +424,7 @@
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>UIButton</string>
 							<string>UIButton</string>
 							<string>UIButton</string>
 							<string>UILabel</string>
@@ -433,6 +435,7 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>connectButton</string>
 							<string>disconnectButton</string>
 							<string>pauseButton</string>
 							<string>progressLabel</string>
@@ -440,6 +443,10 @@
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBToOneOutletInfo">
+								<string key="name">connectButton</string>
+								<string key="candidateClassName">UIButton</string>
+							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">disconnectButton</string>
 								<string key="candidateClassName">UIButton</string>
@@ -478,7 +485,7 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">connect-blue-black-300x57.png</string>
+			<string key="NS.key.0">connect-blue-black.png</string>
 			<string key="NS.object.0">{300, 57}</string>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">301</string>
