@@ -177,7 +177,7 @@ NSString *const kRunKeeperNewPointNotification = @"RunKeeperNewPointNotification
 }
 
 - (ASIHTTPRequest*)postRequest:(NSString*)path content:(NSString*)content contentType:(NSString*)contentType onCompletion:(RIJSONCompletionBlock)completion onFailed:(RIBasicFailedBlock)failed {
-    __block ASIFormDataRequest *request = [self createPostRequest:path content:content contentType:content];    
+    __block ASIFormDataRequest *request = [self createPostRequest:path content:content contentType:contentType];    
     
     [request setCompletionBlock:^{
         // Use when fetching text data
