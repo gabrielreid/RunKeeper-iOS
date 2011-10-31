@@ -87,8 +87,8 @@ extern NSString *const kRunKeeperNewPointNotification;
 - (void)disconnect;
 
 - (void)postActivity:(RunKeeperActivityType)activity start:(NSDate*)start distance:(NSNumber*)distance
-                 duration:(NSNumber*)duration calories:(NSNumber*)calories heartRate:(NSNumber*)heartRate
-                    notes:(NSString*)notes path:(NSArray*)path
+                 duration:(NSNumber*)duration calories:(NSNumber*)calories avgHeartRate:(NSNumber*)avgHeartRate
+               notes:(NSString*)notes path:(NSArray*)path heartRatePoints:(NSArray*)heartRatePoints
              success:(RIBasicCompletionBlock)success failed:(RIBasicFailedBlock)failed;
 
 

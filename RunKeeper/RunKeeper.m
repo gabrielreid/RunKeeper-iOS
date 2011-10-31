@@ -242,8 +242,8 @@ NSString *const kRunKeeperNewPointNotification = @"RunKeeperNewPointNotification
 }
 
 - (void)postActivity:(RunKeeperActivityType)activity start:(NSDate*)start distance:(NSNumber*)distance
-                 duration:(NSNumber*)duration calories:(NSNumber*)calories heartRate:(NSNumber*)heartRate
-                    notes:(NSString*)notes path:(NSArray*)path
+                 duration:(NSNumber*)duration calories:(NSNumber*)calories avgHeartRate:(NSNumber*)avgHeartRate
+                    notes:(NSString*)notes path:(NSArray*)path  heartRatePoints:(NSArray*)heartRatePoints
              success:(RIBasicCompletionBlock)success failed:(RIBasicFailedBlock)failed
 {
     if (!connected) {
@@ -251,15 +251,37 @@ NSString *const kRunKeeperNewPointNotification = @"RunKeeperNewPointNotification
         if (failed) failed(err);
         return;
     }
-    NSDictionary *args = [NSDictionary dictionaryWithObjectsAndKeys:
+    NSMutableDictionary *activityDictionary = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                           [self activityString:activity], @"type",
                           start, @"start_time",
                           distance, @"total_distance",
                           duration, @"duration",
-                          notes, @"notes",
-                          path, @"path",
                           nil];
-    NSString *content = [args JSONRepresentation];
+    
+    if (avgHeartRate != nil){
+        [activityDictionary setValue:avgHeartRate forKey:@"average_heart_rate"];
+    }
+    
+    if (calories != nil){
+        [activityDictionary setValue:calories forKey:@"total_calories"];
+    }
+    
+    if (notes != nil){
+        [activityDictionary setValue:notes forKey:@"notes"];
+    }
+    
+    if (path != nil){
+        [activityDictionary setValue:path forKey:@"path"];
+    }
+    
+    if (heartRatePoints != nil){
+        [activityDictionary setValue:heartRatePoints forKey:@"heart_rate"];
+    }
+         
+         
+    
+    
+    NSString *content = [activityDictionary JSONRepresentation];
     //NSLog(@"content: %@", content);
     [self postRequest:[self.paths objectForKey:kRKFitnessActivitiesKey] content:content
         contentType:@"application/vnd.com.runkeeper.NewFitnessActivity+json" 
