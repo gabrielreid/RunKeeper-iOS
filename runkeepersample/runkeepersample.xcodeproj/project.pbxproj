@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0291998C1445B62C0082160F /* connect-blue-black.png in Resources */ = {isa = PBXBuildFile; fileRef = 0291998B1445B62C0082160F /* connect-blue-black.png */; };
 		63077884142987D400E1ECD4 /* AppData.m in Sources */ = {isa = PBXBuildFile; fileRef = 63077883142987D300E1ECD4 /* AppData.m */; };
 		6312935A142ADA8500BEFB57 /* RunKeeperPathPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 63129359142ADA8500BEFB57 /* RunKeeperPathPoint.m */; };
-		63129397142B75DA00BEFB57 /* connect-blue-black-300x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 63129396142B75DA00BEFB57 /* connect-blue-black-300x57.png */; };
 		63B65AA9142A5FA400BA4D63 /* NSDate+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B65AA7142A5FA400BA4D63 /* NSDate+SBJSON.m */; };
 		63C1FBB41424230F0074CF99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C1FBB31424230F0074CF99 /* UIKit.framework */; };
 		63C1FBB61424230F0074CF99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C1FBB51424230F0074CF99 /* Foundation.framework */; };
@@ -78,11 +78,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0291998B1445B62C0082160F /* connect-blue-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "connect-blue-black.png"; sourceTree = "<group>"; };
 		63077882142987D300E1ECD4 /* AppData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppData.h; sourceTree = "<group>"; };
 		63077883142987D300E1ECD4 /* AppData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppData.m; sourceTree = "<group>"; };
 		63129358142ADA8500BEFB57 /* RunKeeperPathPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunKeeperPathPoint.h; sourceTree = "<group>"; };
 		63129359142ADA8500BEFB57 /* RunKeeperPathPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunKeeperPathPoint.m; sourceTree = "<group>"; };
-		63129396142B75DA00BEFB57 /* connect-blue-black-300x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "connect-blue-black-300x57.png"; path = "../../../intensity/vendor/RunKeeper/images/connect-blue-black-300x57.png"; sourceTree = "<group>"; };
 		63B65AA7142A5FA400BA4D63 /* NSDate+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SBJSON.m"; sourceTree = "<group>"; };
 		63B65AA8142A5FA400BA4D63 /* NSDate+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SBJSON.h"; sourceTree = "<group>"; };
 		63C1FBAF1424230F0074CF99 /* runkeepersample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = runkeepersample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -310,7 +310,7 @@
 		63C1FBEF142424BE0074CF99 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				63129396142B75DA00BEFB57 /* connect-blue-black-300x57.png */,
+				0291998B1445B62C0082160F /* connect-blue-black.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -513,7 +513,7 @@
 				63C1FBC71424230F0074CF99 /* MainWindow.xib in Resources */,
 				63C1FBCD1424230F0074CF99 /* RootViewController.xib in Resources */,
 				63C1FC7B142435D00074CF99 /* RunKeeperErrors.strings in Resources */,
-				63129397142B75DA00BEFB57 /* connect-blue-black-300x57.png in Resources */,
+				0291998C1445B62C0082160F /* connect-blue-black.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
